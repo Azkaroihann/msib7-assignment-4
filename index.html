@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="profile">
+        <div class="profile-container">
+            <div class="profile-left">
+                <img src="images.png" alt="Profile" class="profile-image">
+                <div class="profile-info">
+                    <h2 id="profile-name">Nama Anda</h2>
+                    <p id="profile-role">Front End Designer</p>
+                    <div class="profile-buttons">
+                        <button id="edit-btn">Edit</button>
+                        <button id="resume-btn">Resume</button>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-right">
+                <p><strong>Availability:</strong> <span id="profile-availability">Full Time</span></p>
+                <p><strong>Usia:</strong> <span id="profile-age">19</span></p>
+                <p><strong>Lokasi:</strong> <span id="profile-location">Jakarta</span></p>
+                <p><strong>Pengalaman:</strong> <span id="profile-experience">2</span></p>
+                <p><strong>Email:</strong> <span id="profile-email">email@gmail.com</span></p>
+            </div>
+        </div>
+        
+        <div id="edit-form">
+            <form id="form-edit">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" value="Nama Anda"><br>
+
+                <label for="role">Jabatan:</label>
+                <input type="text" id="role" value="Front End Designer"><br>
+
+                <label for="availability">Availability:</label>
+                <input type="text" id="availability" value="Full Time"><br>
+
+                <label for="age">Usia:</label>
+                <input type="number" id="age" value="19"><br>
+
+                <label for="location">Lokasi:</label>
+                <input type="text" id="location" value="Jakarta"><br>
+
+                <label for="experience">Pengalaman:</label>
+                <input type="number" id="experience" value="2"><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" value="email@gmail.com"><br>
+
+                <button type="submit">Save</button>
+                <button type="button" id="cancel-btn">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
